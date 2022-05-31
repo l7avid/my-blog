@@ -28,7 +28,7 @@ const Store = createContext({} as contextType)
 
 const StoreProvider:React.FC<Props> = ({children}) => {
 
-  const [state, dispatch] = useReducer(reducer, initialState)
+const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
     <Store.Provider value={{state, dispatch}}>
